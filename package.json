@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Compress big pictures before upload",
   "main": "index.js",
+  "dependencies": {
+    "formidable": "1.0.14",
+    "iconv-lite": "0.4.13"
+  },
   "scripts": {
     "test": "npm index.js"
   },
