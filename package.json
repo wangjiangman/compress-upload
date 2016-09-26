@@ -1,0 +1,25 @@
+{
+  "name": "compress-upload",
+  "version": "1.0.0",
+  "description": "Compress big pictures before upload",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangjiangman/compress-upload.git"
+  },
+  "keywords": [
+    "canvas",
+    "compress",
+    "picture",
+    "upload"
+  ],
+  "author": "fiona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangjiangman/compress-upload/issues"
+  },
+  "homepage": "https://github.com/wangjiangman/compress-upload#readme"
+}
