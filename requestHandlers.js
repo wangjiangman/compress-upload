@@ -69,23 +69,23 @@ function show(response) {
 	      	response.end();
 	    }
 	})*/
-	fs.readdir('./tmp', function(error, files) {
+	fs.readdir('./tmp',function(error, files) {
 		if(error) {
 			response.writeHead(500, {"Content-Type": "text/plain"});
       		response.write(error + "\n");
       		response.end();
 		} else {
+			response.writeHead(200, {"Content-Type": "text/html;charset=UTF-8"});
 			for(var i = 0; i < files.length; i++) {
 				console.log('files[i] = ' + files[i]);
-			}
-			response.writeHead(200, {"Content-Type": "text/html"});
-			for(var i = 0; i < files.length; i++) {
-				response.write('<h2>Picture' + (i+1) + ':</h2>');
+				var byteNum = fs.statSync('./tmp/'+files[i]).size;
+				var kbNum = (byteNum / 1024).toFixed(2);
+				response.write('<h2>Picture SIZE = ' + (kbNum+'KB') + '</h2>');
 				response.write('<img src="./tmp/'  + files[i] + '">');
 			}
       		response.end();
 	    }
-	})
+	}, {encoding: 'utf8'})
 }
  
 exports.start = start;
