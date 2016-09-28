@@ -9,5 +9,5 @@ var config = {
 };
 ```
 ##2、Node入口index.js
-##3、页面入口index.html
-##4、上传的图片存储在tmp目录下，访问http:127.0.0.1:8888/show,可预览已上传图片
+##3、页面入口[http://127.0.0.1:8888/index.html](http://127.0.0.1:8888/index.html)
+##4、上传的图片存储在tmp目录下，可访问[http://127.0.0.1:8888/show](http://127.0.0.1:8888/show)进行预览
